@@ -1,4 +1,5 @@
 import React from 'react';
+import "../Styles/User.scss";
 
 
 class RandomUSer extends React.Component {
@@ -17,10 +18,10 @@ class RandomUSer extends React.Component {
     render() {
         return <div>
             {this.state.loading || !this.state.person ? <div>loading</div> : <div>
-                <div>{this.state.person.name.first}</div>
-                <div>{this.state.person.name.last}</div>
-                <div>{this.state.person.dob.age}</div>
-                <img src={this.state.person.picture.large}/>
+                <div className="person-name-first">{this.state.person.name.first}</div>
+                <div className="person-name-last">{this.state.person.name.last}</div>
+                <div className="person-age">{this.state.person.dob.age}</div>
+                <img   src={this.state.person.picture.large} className ="person-image" alt="image"/> 
             </div>}
         </div>;
     }

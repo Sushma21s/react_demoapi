@@ -1,0 +1,23 @@
+$primary_1:  blue;
+$primary_2: #3b3602;
+$primary_3: #092241;
+
+
+.person-name-first{
+    color: $primary_1;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.person-name-last{
+    color: $primary_2;
+}
+
+.person-age{
+    color:$primary_3;
+}
+
+.person-image{
+    height:200px;
+}
